@@ -49,6 +49,8 @@ C++ Archipelago multiworld randomizer client library. See [archipelago.gg](https
   * project properties -> C/C++ -> Command Line -> Additional Options
 * Add _WIN32_WINNT=0x0600 (or higher) to Preprocessor Definitions
   * project properties -> C/C++ -> Preprocessor -> Preprocessor Definitions
+* Add _CRT_SECURE_NO_WARNINGS to Preprocessor Definitions
+  * project properties -> C/C++ -> Preprocessor -> Preprocessor Definitions
 * If your code includes <windows.h>, you must also define the WIN32_LEAN_AND_MEAN preprocessor
   * project properties -> C/C++ -> Preprocessor -> Preprocessor Definitions
   * if your code relies on features outside of the include scope of WIN32_LEAN_AND_MEAN, you can choose to include apclientpp.hpp before including windows.h, in this case you also need to define the ASIO_NO_WIN32_LEAN_AND_MEAN preprocessor
